@@ -1,5 +1,6 @@
 import HeroTerminal from "./components/HeroTerminal";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -7,12 +8,14 @@ export default function Home() {
       <header>
         <nav>
           <div className="logo">
-            <svg className="logo-mark" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20 8L4 20L20 32" stroke="#5FC1F0" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M40 8L56 20L40 32" stroke="#5FC1F0" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M33 2L27 38" stroke="#5FC1F0" strokeWidth="5" strokeLinecap="round"/>
-            </svg>
-            <span className="logo-word">My<b>DEV</b></span>
+            <Image
+              src="/images/logo/MyDEV.png"
+              alt="MyDEV logo"
+              width={100}
+              height={100}
+              className="logo-img"
+              priority
+            />
           </div>
           <ul className="links">
             <li><Link href="#layanan">Layanan</Link></li>
@@ -22,7 +25,7 @@ export default function Home() {
             <li><Link href="#kontak">Kontak</Link></li>
           </ul>
           <div className="nav-cta">
-            <Link href="#kontak" className="btn btn-primary" style={{ padding: "11px 20px", fontSize: "14px" }}>Konsultasi Gratis</Link>
+            <Link href="#kontak" className="btn btn-primary" style={{ padding: "11px 20px", fontSize: "14px" }}>Hubungi Kami</Link>
           </div>
         </nav>
       </header>
@@ -31,7 +34,7 @@ export default function Home() {
         <div className="wrap">
           <div>
             <div className="eyebrow">&lt;/&gt; JASA PEMBUATAN WEBSITE</div>
-            <h1>Website yang dibangun<br/>serapi <span className="accent">kodenya.</span></h1>
+            <h1>Website yang dibangun<br />serapi <span className="accent">kodenya.</span></h1>
             <p className="lead">MyDEV membantu bisnis dan personal di Makassar—dan seluruh Indonesia—punya website cepat, rapi, dan enak dilihat. Dari landing page sampai aplikasi web custom.</p>
             <div className="hero-ctas">
               <Link href="#kontak" className="btn btn-primary">Mulai Proyek Anda →</Link>
@@ -82,32 +85,32 @@ export default function Home() {
           </div>
           <div className="grid-3">
             <div className="svc-card">
-              <div className="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/></svg></div>
+              <div className="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" /></svg></div>
               <h3>Landing Page</h3>
               <p>Satu halaman fokus untuk kampanye, produk, atau personal branding. Cepat tayang, cepat konversi.</p>
             </div>
             <div className="svc-card">
-              <div className="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 21V9l8-6 8 6v12h-5v-7H9v7H4z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/></svg></div>
+              <div className="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 21V9l8-6 8 6v12h-5v-7H9v7H4z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" /></svg></div>
               <h3>Company Profile</h3>
               <p>Website resmi bisnis Anda—profil, layanan, portofolio, dan kontak—yang meyakinkan calon klien.</p>
             </div>
             <div className="svc-card">
-              <div className="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 6h18l-2 12H5L3 6z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/><circle cx="9" cy="21" r="1" fill="currentColor"/><circle cx="17" cy="21" r="1" fill="currentColor"/></svg></div>
+              <div className="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 6h18l-2 12H5L3 6z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" /><circle cx="9" cy="21" r="1" fill="currentColor" /><circle cx="17" cy="21" r="1" fill="currentColor" /></svg></div>
               <h3>Toko Online</h3>
               <p>Sistem jual-beli lengkap dengan katalog, keranjang, dan pembayaran—siap terima pesanan 24 jam.</p>
             </div>
             <div className="svc-card">
-              <div className="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 9l-5 5 5 5M16 9l5 5-5 5M13 3L9 21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></div>
+              <div className="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 9l-5 5 5 5M16 9l5 5-5 5M13 3L9 21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg></div>
               <h3>Web App Custom</h3>
               <p>Sistem internal, dashboard, atau aplikasi khusus sesuai alur kerja bisnis Anda—dibangun dari nol.</p>
             </div>
             <div className="svc-card">
-              <div className="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2"/><path d="M8 12h8M8 8h8M8 16h5" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg></div>
+              <div className="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2" /><path d="M8 12h8M8 8h8M8 16h5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg></div>
               <h3>Redesign & UI/UX</h3>
               <p>Website lama terasa kaku? Kami rombak tampilan dan alurnya tanpa mengganggu isi yang sudah jalan.</p>
             </div>
             <div className="svc-card">
-              <div className="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg></div>
+              <div className="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg></div>
               <h3>Maintenance & SEO</h3>
               <p>Website tetap aman, cepat, dan mudah ditemukan di Google—kami yang pantau, Anda fokus bisnis.</p>
             </div>
@@ -293,13 +296,14 @@ export default function Home() {
         <div className="wrap">
           <div className="foot-top">
             <div className="foot-brand">
-              <div className="logo">
-                <svg className="logo-mark" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 8L4 20L20 32" stroke="#5FC1F0" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M40 8L56 20L40 32" stroke="#5FC1F0" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M33 2L27 38" stroke="#5FC1F0" strokeWidth="5" strokeLinecap="round"/>
-                </svg>
-                <span className="logo-word">My<b>DEV</b></span>
+              <div className="foot-logo-wrapper">
+                <Image
+                  src="/images/logo/MyDEV.png"
+                  alt="MyDEV logo"
+                  width={200}
+                  height={200}
+                  className="foot-logo-img"
+                />
               </div>
               <p>Jasa pembuatan website—berbasis di Makassar, melayani klien di seluruh Indonesia.</p>
             </div>

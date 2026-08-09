@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono, Manrope } from "next/font/google";
 import "./globals.css";
+import Preloader from "./components/Preloader";
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
@@ -27,7 +28,10 @@ export default function RootLayout({
       lang="id"
       className={`${jetbrainsMono.variable} ${manrope.variable}`}
     >
-      <body>{children}</body>
+      <body suppressHydrationWarning>
+        <Preloader />
+        {children}
+      </body>
     </html>
   );
 }

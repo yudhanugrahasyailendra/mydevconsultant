@@ -784,6 +784,149 @@ nav .links a:hover {
   justify-content: center;
 }
 
+/* ---------- PAGE HEADER (subpages) ---------- */
+.page-header {
+  padding: 64px 0 56px;
+  border-bottom: 1px solid var(--line);
+  background: var(--bg-alt);
+}
+
+.page-header .wrap {
+  max-width: 760px;
+}
+
+.page-header h1 {
+  font-size: clamp(30px, 4vw, 44px);
+  margin-bottom: 14px;
+}
+
+.page-header p {
+  color: var(--ink-soft);
+  font-size: 17px;
+}
+
+/* ---------- ABOUT ---------- */
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.story-grid p {
+  color: var(--ink-soft);
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.story-visual {
+  background: var(--ink);
+  border-radius: 16px;
+  padding: 32px;
+  color: var(--white);
+  box-shadow: 0 30px 60px -20px rgba(13, 17, 23, .45);
+}
+
+.story-visual .log-hash {
+  margin-bottom: 14px;
+}
+
+.story-visual p {
+  color: #9BA5B1;
+  font-size: 14.5px;
+}
+
+/* ---------- CONTACT ---------- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.contact-card .svc-icon {
+  margin-bottom: 0;
+}
+
+.contact-card h3 {
+  font-size: 15px;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-family: var(--sans);
+}
+
+.contact-card p,
+.contact-card a {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.contact-card a:hover {
+  color: var(--sky-deep);
+}
+
+.contact-form {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+.form-group input,
+.form-group textarea {
+  font-family: var(--sans);
+  font-size: 14.5px;
+  padding: 12px 14px;
+  border: 1.5px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--ink);
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--sky-deep);
+}
+
 /* ---------- FOOTER ---------- */
 footer {
   border-top: 1px solid var(--line);
@@ -875,7 +1018,10 @@ footer {
   .grid-3,
   .pricing-grid,
   .port-grid,
-  .testi-grid {
+  .testi-grid,
+  .story-grid,
+  .contact-grid,
+  .form-row {
     grid-template-columns: 1fr;
   }
 

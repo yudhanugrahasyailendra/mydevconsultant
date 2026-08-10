@@ -1,66 +1,28 @@
-import HeroTerminal from "./components/HeroTerminal";
+import type { Metadata } from "next";
 import Link from "next/link";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "Layanan — MyDEV",
+  description: "Layanan pembuatan website MyDEV: landing page, company profile, toko online, web app custom, redesign, dan maintenance.",
+};
+
+export default function Services() {
   return (
     <>
       <Navbar />
 
-      <section className="hero">
+      <div className="page-header">
         <div className="wrap">
-          <div>
-            <div className="eyebrow">&lt;/&gt; JASA PEMBUATAN WEBSITE</div>
-            <h1>Website yang dibangun<br />serapi <span className="accent">kodenya.</span></h1>
-            <p className="lead">MyDEV membantu bisnis dan personal di Makassar—dan seluruh Indonesia—punya website cepat, rapi, dan enak dilihat. Dari landing page sampai aplikasi web custom.</p>
-            <div className="hero-ctas">
-              <Link href="/contact" className="btn btn-primary">Mulai Proyek Anda →</Link>
-              <Link href="#portofolio" className="btn btn-ghost">Lihat Portofolio</Link>
-            </div>
-            <div className="hero-meta">
-              <span><i className="dot"></i> Respon &lt; 1 jam</span>
-              <span><i className="dot"></i> Basis Makassar, kerja seluruh Indonesia</span>
-              <span><i className="dot"></i> Revisi sampai puas</span>
-            </div>
-          </div>
-          <div className="stage">
-            <div className="terminal">
-              <div className="term-bar">
-                <span className="term-dot"></span><span className="term-dot"></span><span className="term-dot"></span>
-                <span className="term-file">index.html — proyek-klien</span>
-              </div>
-              <HeroTerminal />
-            </div>
-            <div className="preview-card">
-              <div className="preview-top"><span></span><span></span><span></span></div>
-              <div className="preview-body">
-                <div className="bar w1"></div>
-                <div className="bar w2"></div>
-                <div className="bar w3"></div>
-                <div className="box"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div className="trust">
-        <div className="wrap">
-          <div className="trust-item"><div className="num">50+</div><div className="lbl">website sudah diluncurkan</div></div>
-          <div className="trust-item"><div className="num">4.9/5</div><div className="lbl">rata-rata rating klien</div></div>
-          <div className="trust-item"><div className="num">3–14</div><div className="lbl">hari waktu pengerjaan</div></div>
-          <div className="trust-item"><div className="num">100%</div><div className="lbl">source code milik Anda</div></div>
+          <div className="eyebrow">LAYANAN</div>
+          <h1>Satu tim, semua kebutuhan web Anda</h1>
+          <p>Mulai dari halaman promosi sederhana sampai sistem custom—dikerjakan langsung oleh tim kami, tanpa lempar-lempar ke banyak vendor.</p>
         </div>
       </div>
 
-      <section id="layanan">
+      <section>
         <div className="wrap">
-          <div className="section-head">
-            <div className="eyebrow">LAYANAN</div>
-            <h2>Satu tim, semua kebutuhan web Anda</h2>
-            <p>Mulai dari halaman promosi sederhana sampai sistem custom—dikerjakan langsung, tanpa lempar-lempar ke banyak vendor.</p>
-          </div>
           <div className="grid-3">
             <div className="svc-card">
               <div className="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" /></svg></div>
@@ -96,7 +58,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="proses" className="process-alt">
+      <section className="process-alt">
         <div className="wrap">
           <div className="section-head">
             <div className="eyebrow">// PROSES KERJA</div>
@@ -184,88 +146,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="portofolio" style={{ background: "var(--bg-alt)" }}>
-        <div className="wrap">
-          <div className="section-head">
-            <div className="eyebrow">PORTOFOLIO</div>
-            <h2>Beberapa proyek yang sudah kami bangun</h2>
-            <p>Contoh pekerjaan—tampilan mockup untuk gambaran gaya visual yang bisa kami kerjakan.</p>
-          </div>
-          <div className="port-grid">
-            <div className="port-card">
-              <div className="port-thumb" style={{ background: "linear-gradient(135deg,#5FC1F0,#1E7FB8)" }}>
-                <div className="browser-dots"><span></span><span></span><span></span></div>
-              </div>
-              <div className="port-info">
-                <div className="tag">COMPANY PROFILE</div>
-                <h3>Kopi Anoa Roastery</h3>
-                <p>Profil bisnis kedai kopi lokal Makassar dengan katalog menu digital.</p>
-              </div>
-            </div>
-            <div className="port-card">
-              <div className="port-thumb" style={{ background: "linear-gradient(135deg,#0D1117,#3D444D)" }}>
-                <div className="browser-dots"><span></span><span></span><span></span></div>
-              </div>
-              <div className="port-info">
-                <div className="tag">TOKO ONLINE</div>
-                <h3>Rumah Tenun Sengkang</h3>
-                <p>Toko online kain tenun dengan katalog produk dan checkout WhatsApp.</p>
-              </div>
-            </div>
-            <div className="port-card">
-              <div className="port-thumb" style={{ background: "linear-gradient(135deg,#9ECE6A,#1E7FB8)" }}>
-                <div className="browser-dots"><span></span><span></span><span></span></div>
-              </div>
-              <div className="port-info">
-                <div className="tag">WEB APP</div>
-                <h3>Dashboard Klinik Sehati</h3>
-                <p>Sistem booking dan rekam pasien untuk klinik keluarga.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section>
-        <div className="wrap">
-          <div className="section-head">
-            <div className="eyebrow">TESTIMONI</div>
-            <h2>Kata mereka yang sudah pakai MyDEV</h2>
-          </div>
-          <div className="testi-grid">
-            <div className="testi">
-              <p className="quote">"Prosesnya jelas dari awal, tiap tahap dikabari. Website toko saya jadi lebih cepat dari yang lama."</p>
-              <div className="testi-who">
-                <div className="avatar"></div>
-                <div><div className="name">Nurul Aisyah</div><div className="role">Pemilik, Rumah Tenun Sengkang</div></div>
-              </div>
-            </div>
-            <div className="testi">
-              <p className="quote">"Awalnya cuma butuh landing page, sekarang lanjut ke sistem booking. Enak, satu tim yang paham semua."</p>
-              <div className="testi-who">
-                <div className="avatar"></div>
-                <div><div className="name">dr. Fajar Ramadhan</div><div className="role">Klinik Sehati</div></div>
-              </div>
-            </div>
-            <div className="testi">
-              <p className="quote">"Revisi cepat direspon, hasil akhirnya rapi banget dan gampang diubah sendiri lewat CMS-nya."</p>
-              <div className="testi-who">
-                <div className="avatar"></div>
-                <div><div className="name">Siti Marlina</div><div className="role">Kopi Anoa Roastery</div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="kontak">
         <div className="cta-band">
           <div className="eyebrow" style={{ justifyContent: "center" }}>&lt;/&gt; SIAP MULAI?</div>
           <h2>Ceritakan kebutuhan website Anda</h2>
           <p>Konsultasi awal gratis, tanpa komitmen. Kami balas lewat WhatsApp dalam hitungan menit.</p>
           <div className="hero-ctas">
-            <Link href="#" className="btn btn-primary">Chat via WhatsApp →</Link>
-            <Link href="#" className="btn btn-ghost" style={{ background: "var(--white)" }}>Kirim Email</Link>
+            <Link href="/contact" className="btn btn-primary">Hubungi Kami →</Link>
           </div>
         </div>
       </section>

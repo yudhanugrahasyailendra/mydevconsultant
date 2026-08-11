@@ -35,7 +35,7 @@ export default function Contact() {
                 <div className="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" strokeWidth="2" /><path d="m2 7 10 6 10-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg></div>
                 <div>
                   <h3>Email</h3>
-                  <a href="mailto:hello@mydev.id">hello@mydev.id</a>
+                  <a href="mailto:mydev9883@gmail.com">mydev9883@gmail.com</a>
                 </div>
               </div>
               <div className="contact-card">
@@ -54,7 +54,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <form className="contact-form" action="mailto:hello@mydev.id" method="post" encType="text/plain">
+            <form className="contact-form" action="mailto:mydev9883@gmail.com" method="post" encType="text/plain">
               <div className="form-row">
                 <div className="form-group">
                   <label htmlFor="name">Nama</label>

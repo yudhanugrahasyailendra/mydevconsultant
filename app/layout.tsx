@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { JetBrains_Mono, Manrope } from "next/font/google";
 import "./globals.css";
 import Preloader from "./components/Preloader";
+import RouteLoader from "./components/RouteLoader";
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
@@ -30,7 +31,7 @@ export default function RootLayout({
     >
       <body suppressHydrationWarning>
         <Preloader />
-        {children}
+        <RouteLoader>{children}</RouteLoader>
       </body>
     </html>
   );

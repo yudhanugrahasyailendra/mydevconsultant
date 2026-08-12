@@ -15,7 +15,7 @@ export default function Services() {
 
       <div className="page-header">
         <div className="wrap">
-          <div className="eyebrow">LAYANAN</div>
+          <div className="eyebrow">LAYANAN KAMI</div>
           <h1>Satu tim, semua kebutuhan web Anda</h1>
           <p>Mulai dari halaman promosi sederhana sampai sistem custom—dikerjakan langsung oleh tim kami, tanpa lempar-lempar ke banyak vendor.</p>
         </div>

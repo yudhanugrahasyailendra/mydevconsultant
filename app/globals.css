@@ -1000,8 +1000,9 @@ nav .links a.active::after {
 
 /* ---------- FOOTER ---------- */
 footer {
+  background: var(--bg-alt);
   border-top: 1px solid var(--line);
-  padding: 56px 0 30px;
+  padding: 64px 0 30px;
 }
 
 .foot-logo-wrapper {
@@ -1017,42 +1018,72 @@ footer {
 
 .foot-top {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-bottom: 44px;
-}
-
-.foot-cols {
-  display: flex;
   gap: 64px;
-  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
-.foot-col h4 {
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: .05em;
-  color: var(--muted);
-  margin-bottom: 14px;
+.foot-brand {
+  flex: 1 1 55%;
 }
 
-.foot-col a {
-  display: block;
-  font-size: 14px;
+.foot-desc {
   color: var(--ink-soft);
-  margin-bottom: 10px;
+  font-size: 14px;
+  max-width: 560px;
+  margin-top: 4px;
 }
 
-.foot-col a:hover {
+.foot-desc strong {
+  color: var(--ink);
+}
+
+.foot-social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-top: 24px;
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--ink);
+  box-shadow: 0 1px 3px rgba(13, 17, 23, 0.12);
+}
+
+.foot-social:hover {
   color: var(--sky-deep);
 }
 
-.foot-brand p {
-  color: var(--muted);
+.foot-menu {
+  flex: 1 1 260px;
+  padding-left: 64px;
+  border-left: 1px solid var(--line);
+}
+
+.foot-menu h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.foot-menu-grid {
+  display: flex;
+  gap: 48px;
+}
+
+.foot-menu-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.foot-menu-col a {
   font-size: 14px;
-  max-width: 260px;
-  margin-top: 12px;
+  color: var(--ink-soft);
+}
+
+.foot-menu-col a:hover {
+  color: var(--sky-deep);
 }
 
 .foot-bottom {
@@ -1065,6 +1096,20 @@ footer {
   font-size: 12.5px;
   color: var(--muted);
   font-family: var(--mono);
+}
+
+@media (max-width: 700px) {
+  .foot-top {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .foot-menu {
+    padding-left: 0;
+    border-left: none;
+    border-top: 1px solid var(--line);
+    padding-top: 32px;
+  }
 }
 
 /* ---------- RESPONSIVE ---------- */

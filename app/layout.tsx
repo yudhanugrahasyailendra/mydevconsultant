@@ -15,7 +15,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "MyDEV — Jasa Pembuatan Website",
+  title: "Home | MyDEV - Building Your Future",
   description: "Jasa Pembuatan Website",
 };
 

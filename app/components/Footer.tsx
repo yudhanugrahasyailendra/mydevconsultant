@@ -17,7 +17,7 @@ export default function Footer() {
               />
             </div>
             <p className="foot-desc">
-              <strong>MyDEV</strong> adalah penyedia solusi IT terpercaya yang mengkhususkan diri dalam pembuatan website custom, aplikasi mobile, dan layanan digital cerdas. Dengan teknologi terkini seperti Java, PHP, React, Angular, dan AWS, kami membantu bisnis Anda tumbuh dengan efisien dan sukses di era digital.
+              <strong>MyDEV</strong> hadir sebagai mitra strategis dan penyedia solusi IT terpercaya untuk mengakselerasi bisnis Anda. Kami berfokus pada pengembangan custom website, aplikasi mobile, serta layanan digital terintegrasi yang dirancang khusus untuk menjawab tantangan industri. Didukung oleh ekosistem teknologi mutakhir seperti Java, PHP, React, Angular, dan AWS, kami berkomitmen untuk mendorong efisiensi operasional dan memastikan kesuksesan transformasi digital perusahaan Anda.
             </p>
             <a
               href="https://instagram.com"

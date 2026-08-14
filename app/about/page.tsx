@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Tentang Kami — MyDEV",
+  title: "Tentang Kami | MyDEV - Building Your Future",
   description: "Kenali MyDEV—tim jasa pembuatan website berbasis di Makassar yang melayani klien di seluruh Indonesia.",
 };
 

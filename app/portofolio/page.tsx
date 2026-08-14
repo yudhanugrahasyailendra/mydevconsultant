@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Portofolio — MyDEV",
+  title: "Portofolio | MyDEV - Building Your Future",
   description: "Kumpulan proyek website yang sudah dibangun MyDEV—dari landing page, company profile, toko online, sampai web app custom.",
 };
 

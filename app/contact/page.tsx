@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Kontak — MyDEV",
+  title: "Kontak | MyDEV - Building Your Future",
   description: "Hubungi MyDEV untuk konsultasi gratis kebutuhan website Anda—via WhatsApp, email, atau form kontak.",
 };
 

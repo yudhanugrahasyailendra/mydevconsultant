@@ -95,57 +95,6 @@ export default function Services() {
         </div>
       </section>
 
-      <section id="paket">
-        <div className="wrap">
-          <div className="section-head">
-            <div className="eyebrow">PAKET</div>
-            <h2>Harga jelas, tanpa biaya tersembunyi</h2>
-            <p>Pilih sesuai kebutuhan sekarang—semua paket bisa ditingkatkan kapan saja.</p>
-          </div>
-          <div className="pricing-grid">
-            <div className="plan">
-              <h3>Starter</h3>
-              <div className="desc">Untuk landing page atau profil personal.</div>
-              <div className="price">Rp 1,5<span>jt</span></div>
-              <ul>
-                <li>1 halaman, desain custom</li>
-                <li>Optimasi mobile & kecepatan</li>
-                <li>Domain & hosting 1 tahun</li>
-                <li>2x revisi desain</li>
-              </ul>
-              <Link href="/contact" className="btn btn-ghost" style={{ justifyContent: "center" }}>Pilih Starter</Link>
-            </div>
-            <div className="plan popular">
-              <span className="plan-badge">PALING DIPILIH</span>
-              <h3>Business</h3>
-              <div className="desc">Untuk company profile lengkap dengan CMS.</div>
-              <div className="price">Rp 4<span>jt</span></div>
-              <ul>
-                <li>Sampai 6 halaman</li>
-                <li>CMS—konten bisa diedit sendiri</li>
-                <li>Integrasi WhatsApp & Google Maps</li>
-                <li>Dasar SEO on-page</li>
-                <li>4x revisi desain</li>
-              </ul>
-              <Link href="/contact" className="btn btn-primary" style={{ justifyContent: "center" }}>Pilih Business</Link>
-            </div>
-            <div className="plan">
-              <h3>Pro / Custom</h3>
-              <div className="desc">Untuk toko online atau aplikasi web khusus.</div>
-              <div className="price">Mulai Rp 8<span>jt</span></div>
-              <ul>
-                <li>Fitur & alur sesuai kebutuhan</li>
-                <li>Sistem pembayaran & katalog</li>
-                <li>Dashboard admin</li>
-                <li>Sesi konsultasi arsitektur</li>
-                <li>Revisi tanpa batas selama build</li>
-              </ul>
-              <Link href="/contact" className="btn btn-ghost" style={{ justifyContent: "center" }}>Diskusikan Kebutuhan</Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section>
         <div className="cta-band">
           <div className="eyebrow" style={{ justifyContent: "center" }}>&lt;/&gt; SIAP MULAI?</div>

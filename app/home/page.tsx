@@ -111,34 +111,49 @@ export default function Home() {
 
       <section id="proses" className="process-alt">
         <div className="wrap">
-          <div className="section-head">
-            <div className="eyebrow">// PROSES KERJA</div>
+          <div className="section-head text-center" style={{ textAlign: "center", maxWidth: "700px", margin: "0 auto" }}>
+            <div className="eyebrow" style={{ justifyContent: "center" }}>PROSES KERJA</div>
             <h2>Lima commit sampai website Anda live</h2>
-            <p>Alur kerja yang sama untuk setiap proyek, supaya Anda selalu tahu ada di tahap mana.</p>
+            <p>Alur kerja yang terstruktur dan transparan untuk setiap proyek, sehingga Anda selalu tahu progressnya.</p>
           </div>
-          <div className="log">
-            <div className="log-item">
-              <div className="log-hash">$ commit a1c9f2 — discovery</div>
+          <div className="commit-grid">
+            <div className="commit-card">
+              <div className="commit-header">
+                <span className="commit-hash">$ commit a1c9f2</span>
+                <span className="commit-tag">discovery</span>
+              </div>
               <h3>Diskusi & Riset</h3>
               <p>Kami gali tujuan bisnis, target pengunjung, dan referensi yang Anda suka lewat chat atau call singkat.</p>
             </div>
-            <div className="log-item">
-              <div className="log-hash">$ commit 7e40b1 — design</div>
+            <div className="commit-card">
+              <div className="commit-header">
+                <span className="commit-hash">$ commit 7e40b1</span>
+                <span className="commit-tag">design</span>
+              </div>
               <h3>Wireframe & Desain</h3>
               <p>Susunan halaman dan tampilan visual dibuat dulu, Anda review sebelum satu baris kode pun ditulis.</p>
             </div>
-            <div className="log-item">
-              <div className="log-hash">$ commit c33d08 — build</div>
+            <div className="commit-card">
+              <div className="commit-header">
+                <span className="commit-hash">$ commit c33d08</span>
+                <span className="commit-tag">build</span>
+              </div>
               <h3>Development</h3>
               <p>Desain yang disetujui kami ubah jadi website yang berfungsi—cepat, rapi, dan mobile-friendly.</p>
             </div>
-            <div className="log-item">
-              <div className="log-hash">$ commit f912aa — qa</div>
+            <div className="commit-card">
+              <div className="commit-header">
+                <span className="commit-hash">$ commit f912aa</span>
+                <span className="commit-tag">qa</span>
+              </div>
               <h3>Testing & Revisi</h3>
               <p>Dicek di berbagai perangkat dan browser, lalu direvisi sesuai masukan Anda sampai benar-benar pas.</p>
             </div>
-            <div className="log-item">
-              <div className="log-hash">$ commit 0d8e17 — deploy</div>
+            <div className="commit-card">
+              <div className="commit-header">
+                <span className="commit-hash">$ commit 0d8e17</span>
+                <span className="commit-tag">deploy</span>
+              </div>
               <h3>Launch & Support</h3>
               <p>Website naik ke domain Anda, plus pendampingan pasca-launch kalau ada yang perlu disesuaikan.</p>
             </div>
@@ -163,6 +178,16 @@ export default function Home() {
                 <div className="tag">Company Profile</div>
                 <h3>Center Coconut</h3>
                 <p>Profil bisnis kopra putih Toraja</p>
+                <div className="tech-stack">
+                  <span className="tech-badge">Wordpress</span>
+                  <span className="tech-badge">MySQL</span>
+                </div>
+                <div>
+                  <Link href="#" className="btn-visit-modern">
+                    Kunjungi Web
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17l9.2-9.2M17 16.8V7H7.2" /></svg>
+                  </Link>
+                </div>
               </div>
             </div>
             <div className="port-card">
@@ -174,6 +199,16 @@ export default function Home() {
                 <div className="tag">School Profile</div>
                 <h3>Madrasah Aliyah Bindu</h3>
                 <p>Profil sekolah lengkap dengan informasi akademik, kegiatan, dan fasilitas.</p>
+                <div className="tech-stack">
+                  <span className="tech-badge">Wordpress</span>
+                  <span className="tech-badge">MySQL</span>
+                </div>
+                <div>
+                  <Link href="#" className="btn-visit-modern">
+                    Kunjungi Web
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17l9.2-9.2M17 16.8V7H7.2" /></svg>
+                  </Link>
+                </div>
               </div>
             </div>
             <div className="port-card">
@@ -185,6 +220,16 @@ export default function Home() {
                 <div className="tag">School Profile</div>
                 <h3>SMP Negeri 1 Tinggimocong</h3>
                 <p>Profil sekolah lengkap dengan informasi akademik, kegiatan, dan fasilitas.</p>
+                <div className="tech-stack">
+                  <span className="tech-badge">Wordpress</span>
+                  <span className="tech-badge">MySQL</span>
+                </div>
+                <div>
+                  <Link href="#" className="btn-visit-modern">
+                    Kunjungi Web
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17l9.2-9.2M17 16.8V7H7.2" /></svg>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

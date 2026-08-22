@@ -643,6 +643,85 @@ nav .links a.active::after {
   max-width: 520px;
 }
 
+/* ---------- COMMIT GRID ---------- */
+.commit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.commit-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 32px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.commit-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--sky);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(95, 193, 240, 0.15);
+}
+
+.commit-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--sky);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.commit-card:hover::before {
+  opacity: 1;
+}
+
+.commit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.commit-hash {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--sky);
+}
+
+.commit-tag {
+  background: rgba(95, 193, 240, 0.15);
+  color: var(--sky);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.commit-card h3 {
+  font-size: 20px;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.commit-card p {
+  color: #9BA5B1;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
 /* ---------- PRICING ---------- */
 .pricing-grid {
   display: grid;
@@ -732,7 +811,7 @@ nav .links a.active::after {
 .port-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
+  gap: 32px; /* Increased gap */
 }
 
 .port-card {
@@ -740,46 +819,120 @@ nav .links a.active::after {
   overflow: hidden;
   border: 1px solid var(--line);
   background: var(--white);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.port-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -10px rgba(0,0,0,0.1);
 }
 
 .port-thumb {
-  height: 150px;
+  height: 220px; /* Increased from 150px */
   position: relative;
   overflow: hidden;
 }
 
 .port-thumb .browser-dots {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 12px;
+  left: 12px;
   display: flex;
-  gap: 5px;
+  gap: 6px;
   z-index: 2;
 }
 
 .port-thumb .browser-dots span {
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, .6);
+  background: rgba(255, 255, 255, .8);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
 .port-info {
-  padding: 18px 20px 20px;
+  padding: 24px;
 }
 
 .port-info .tag {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   color: var(--sky-deep);
   font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .port-info h3 {
-  font-size: 16px;
-  margin: 6px 0 4px;
+  font-size: 18px; /* Increased from 16px */
+  margin: 8px 0 6px;
   font-weight: 700;
   font-family: var(--sans);
+}
+
+.tech-stack {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+
+.tech-badge {
+  background: rgba(13, 17, 23, 0.05); /* Works for light mode too, but better match theme */
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 11px;
+  font-family: var(--mono);
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.tech-badge:hover {
+  background: rgba(95, 193, 240, 0.1);
+  border-color: rgba(95, 193, 240, 0.3);
+  color: var(--sky-deep);
+}
+
+.btn-visit-modern {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.btn-visit-modern::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--sky);
+  transition: width 0.3s ease;
+}
+
+.btn-visit-modern:hover {
+  color: var(--sky-deep);
+}
+
+.btn-visit-modern:hover::after {
+  width: 100%;
+}
+
+.btn-visit-modern svg {
+  transition: transform 0.2s ease;
+}
+
+.btn-visit-modern:hover svg {
+  transform: translate(3px, -3px);
 }
 
 .port-info p {

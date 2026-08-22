@@ -42,7 +42,7 @@ export default function HeroTerminal() {
         if (!active) return;
         shown = text.slice(0, i+1);
         lineEl.textContent = shown;
-        await new Promise(r => setTimeout(r, 14));
+        await new Promise(r => setTimeout(r, 30));
       }
       if (active) lineEl.innerHTML = html;
     }
@@ -52,7 +52,7 @@ export default function HeroTerminal() {
       for(const line of lines){
         if (!active) return;
         if (el) await typeLine(el, line.html);
-        await new Promise(r => setTimeout(r, 90));
+        await new Promise(r => setTimeout(r, 200));
       }
       if (active && el) {
         const cursor = document.createElement('span');
@@ -61,11 +61,20 @@ export default function HeroTerminal() {
       }
     }
 
-    if(reduceMotion){
-      renderStatic();
-    } else {
-      playSequence();
-    }
+    const checkPreloaderAndPlay = () => {
+      if (!active) return;
+      if (document.querySelector('.preloader-modern')) {
+        setTimeout(checkPreloaderAndPlay, 500);
+        return;
+      }
+      if(reduceMotion){
+        renderStatic();
+      } else {
+        playSequence();
+      }
+    };
+
+    checkPreloaderAndPlay();
 
     return () => { active = false; };
   }, [isClient]);

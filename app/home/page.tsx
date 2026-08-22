@@ -1,7 +1,9 @@
 import HeroTerminal from "../components/HeroTerminal";
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Counter from "../components/Counter";
 
 export default function Home() {
   return (
@@ -11,7 +13,6 @@ export default function Home() {
       <section className="hero">
         <div className="wrap">
           <div>
-            <div className="eyebrow">&lt;/&gt; JASA PEMBUATAN WEBSITE</div>
             <h1>Website yang dibangun<br />serapi <span className="accent">kodenya.</span></h1>
             <p className="lead">MyDEV membantu bisnis dan personal di Makassar—dan seluruh Indonesia—punya website cepat, rapi, dan enak dilihat. Dari landing page sampai aplikasi web custom.</p>
             <div className="hero-ctas">
@@ -47,10 +48,22 @@ export default function Home() {
 
       <div className="trust">
         <div className="wrap">
-          <div className="trust-item"><div className="num">50+</div><div className="lbl">website sudah diluncurkan</div></div>
-          <div className="trust-item"><div className="num">4.9/5</div><div className="lbl">rata-rata rating klien</div></div>
-          <div className="trust-item"><div className="num">3–14</div><div className="lbl">hari waktu pengerjaan</div></div>
-          <div className="trust-item"><div className="num">100%</div><div className="lbl">source code milik Anda</div></div>
+          <div className="trust-item">
+            <div className="num"><Counter end={50} suffix="+" /></div>
+            <div className="lbl">website sudah diluncurkan</div>
+          </div>
+          <div className="trust-item">
+            <div className="num"><Counter end={4.9} decimals={1} suffix="/5" /></div>
+            <div className="lbl">rata-rata rating klien</div>
+          </div>
+          <div className="trust-item">
+            <div className="num"><Counter end={3} />–<Counter end={14} /></div>
+            <div className="lbl">hari waktu pengerjaan</div>
+          </div>
+          <div className="trust-item">
+            <div className="num"><Counter end={100} suffix="%" /></div>
+            <div className="lbl">source code milik Anda</div>
+          </div>
         </div>
       </div>
 
@@ -133,93 +146,45 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="paket">
-        <div className="wrap">
-          <div className="section-head">
-            <div className="eyebrow">PAKET</div>
-            <h2>Harga jelas, tanpa biaya tersembunyi</h2>
-            <p>Pilih sesuai kebutuhan sekarang—semua paket bisa ditingkatkan kapan saja.</p>
-          </div>
-          <div className="pricing-grid">
-            <div className="plan">
-              <h3>Starter</h3>
-              <div className="desc">Untuk landing page atau profil personal.</div>
-              <div className="price">Rp 1,5<span>jt</span></div>
-              <ul>
-                <li>1 halaman, desain custom</li>
-                <li>Optimasi mobile & kecepatan</li>
-                <li>Domain & hosting 1 tahun</li>
-                <li>2x revisi desain</li>
-              </ul>
-              <Link href="/contact" className="btn btn-ghost" style={{ justifyContent: "center" }}>Pilih Starter</Link>
-            </div>
-            <div className="plan popular">
-              <span className="plan-badge">PALING DIPILIH</span>
-              <h3>Business</h3>
-              <div className="desc">Untuk company profile lengkap dengan CMS.</div>
-              <div className="price">Rp 4<span>jt</span></div>
-              <ul>
-                <li>Sampai 6 halaman</li>
-                <li>CMS—konten bisa diedit sendiri</li>
-                <li>Integrasi WhatsApp & Google Maps</li>
-                <li>Dasar SEO on-page</li>
-                <li>4x revisi desain</li>
-              </ul>
-              <Link href="/contact" className="btn btn-primary" style={{ justifyContent: "center" }}>Pilih Business</Link>
-            </div>
-            <div className="plan">
-              <h3>Pro / Custom</h3>
-              <div className="desc">Untuk toko online atau aplikasi web khusus.</div>
-              <div className="price">Mulai Rp 8<span>jt</span></div>
-              <ul>
-                <li>Fitur & alur sesuai kebutuhan</li>
-                <li>Sistem pembayaran & katalog</li>
-                <li>Dashboard admin</li>
-                <li>Sesi konsultasi arsitektur</li>
-                <li>Revisi tanpa batas selama build</li>
-              </ul>
-              <Link href="/contact" className="btn btn-ghost" style={{ justifyContent: "center" }}>Diskusikan Kebutuhan</Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section id="portofolio" style={{ background: "var(--bg-alt)" }}>
         <div className="wrap">
           <div className="section-head">
-            <div className="eyebrow">PORTOFOLIO</div>
+            <div className="eyebrow">Portofolio</div>
             <h2>Beberapa proyek yang sudah kami bangun</h2>
             <p>Contoh pekerjaan—tampilan mockup untuk gambaran gaya visual yang bisa kami kerjakan.</p>
           </div>
           <div className="port-grid" style={{ marginBottom: "28px" }}>
             <div className="port-card">
               <div className="port-thumb" style={{ background: "linear-gradient(135deg,#5FC1F0,#1E7FB8)" }}>
+                <Image src="/images/portofolio/Center Coconut.jpg" alt="Center Coconut" fill style={{ objectFit: 'cover' }} />
                 <div className="browser-dots"><span></span><span></span><span></span></div>
               </div>
               <div className="port-info">
-                <div className="tag">COMPANY PROFILE</div>
-                <h3>Kopi Anoa Roastery</h3>
-                <p>Profil bisnis kedai kopi lokal Makassar dengan katalog menu digital.</p>
+                <div className="tag">Company Profile</div>
+                <h3>Center Coconut</h3>
+                <p>Profil bisnis kopra putih Toraja</p>
               </div>
             </div>
             <div className="port-card">
               <div className="port-thumb" style={{ background: "linear-gradient(135deg,#0D1117,#3D444D)" }}>
+                <Image src="/images/portofolio/MAN Bindu.jpg" alt="Madrasah Aliyah Bindu" fill style={{ objectFit: 'cover' }} />
                 <div className="browser-dots"><span></span><span></span><span></span></div>
               </div>
               <div className="port-info">
-                <div className="tag">TOKO ONLINE</div>
-                <h3>Rumah Tenun Sengkang</h3>
-                <p>Toko online kain tenun dengan katalog produk dan checkout WhatsApp.</p>
+                <div className="tag">School Profile</div>
+                <h3>Madrasah Aliyah Bindu</h3>
+                <p>Profil sekolah lengkap dengan informasi akademik, kegiatan, dan fasilitas.</p>
               </div>
             </div>
             <div className="port-card">
               <div className="port-thumb" style={{ background: "linear-gradient(135deg,#9ECE6A,#1E7FB8)" }}>
+                <Image src="/images/portofolio/SMPN 1 Tinggimoncong.jpg" alt="SMP Negeri 1 Tinggimocong" fill style={{ objectFit: 'cover' }} />
                 <div className="browser-dots"><span></span><span></span><span></span></div>
               </div>
               <div className="port-info">
-                <div className="tag">WEB APP</div>
-                <h3>Dashboard Klinik Sehati</h3>
-                <p>Sistem booking dan rekam pasien untuk klinik keluarga.</p>
+                <div className="tag">School Profile</div>
+                <h3>SMP Negeri 1 Tinggimocong</h3>
+                <p>Profil sekolah lengkap dengan informasi akademik, kegiatan, dan fasilitas.</p>
               </div>
             </div>
           </div>
@@ -257,18 +222,6 @@ export default function Home() {
                 <div><div className="name">Siti Marlina</div><div className="role">Kopi Anoa Roastery</div></div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="kontak">
-        <div className="cta-band">
-          <div className="eyebrow" style={{ justifyContent: "center" }}>&lt;/&gt; SIAP MULAI?</div>
-          <h2>Ceritakan kebutuhan website Anda</h2>
-          <p>Konsultasi awal gratis, tanpa komitmen. Kami balas lewat WhatsApp dalam hitungan menit.</p>
-          <div className="hero-ctas">
-            <Link href="#" className="btn btn-primary">Chat via WhatsApp →</Link>
-            <Link href="#" className="btn btn-ghost" style={{ background: "var(--white)" }}>Kirim Email</Link>
           </div>
         </div>
       </section>

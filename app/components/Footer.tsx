@@ -1,18 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Roboto } from "next/font/google";
-
-const roboto = Roboto({
-  weight: ['400', '700'],
-  subsets: ['latin'],
-});
 
 export default function Footer() {
   return (
     <footer className="modern-footer">
       <div className="wrap">
         <div className="foot-cta-banner">
-          <div className={`foot-cta-text ${roboto.className}`}>
+          <div className="foot-cta-text">
             <h2>Siap Mengakselerasi Bisnis Anda?</h2>
             <p>Mari diskusikan kebutuhan website dan aplikasi Anda bersama tim ahli kami.</p>
           </div>

@@ -61,35 +61,35 @@ export default function Services() {
       <section className="process-alt">
         <div className="wrap">
           <div className="section-head">
-            <div className="eyebrow">// PROSES KERJA</div>
-            <h2>Lima commit sampai website Anda live</h2>
-            <p>Alur kerja yang sama untuk setiap proyek, supaya Anda selalu tahu ada di tahap mana.</p>
+            <div className="eyebrow">ALUR KERJA KAMI</div>
+            <h2>5 Langkah Terstruktur Menuju Peluncuran Website Anda</h2>
+            <p>Alur kerja profesional dan transparan agar Anda selalu mengetahui perkembangan proyek secara pasti.</p>
           </div>
           <div className="log">
             <div className="log-item">
-              <div className="log-hash">$ commit a1c9f2 — discovery</div>
-              <h3>Diskusi & Riset</h3>
+              <div className="log-hash">Tahap 01 • Riset & Konsultasi</div>
+              <h3>Diskusi & Riset Kebutuhan</h3>
               <p>Kami gali tujuan bisnis, target pengunjung, dan referensi yang Anda suka lewat chat atau call singkat.</p>
             </div>
             <div className="log-item">
-              <div className="log-hash">$ commit 7e40b1 — design</div>
-              <h3>Wireframe & Desain</h3>
-              <p>Susunan halaman dan tampilan visual dibuat dulu, Anda review sebelum satu baris kode pun ditulis.</p>
+              <div className="log-hash">Tahap 02 • Perancangan Visual</div>
+              <h3>Wireframe & Desain UI/UX</h3>
+              <p>Susunan tata letak dan tampilan visual interaktif disiapkan dulu, Anda review sebelum tahap produksi dimulai.</p>
             </div>
             <div className="log-item">
-              <div className="log-hash">$ commit c33d08 — build</div>
-              <h3>Development</h3>
-              <p>Desain yang disetujui kami ubah jadi website yang berfungsi—cepat, rapi, dan mobile-friendly.</p>
+              <div className="log-hash">Tahap 03 • Pengerjaan & Integrasi</div>
+              <h3>Development & Integrasi Sistem</h3>
+              <p>Desain yang disetujui kami ubah jadi website yang berfungsi—cepat, rapi, aman, dan mobile-friendly.</p>
             </div>
             <div className="log-item">
-              <div className="log-hash">$ commit f912aa — qa</div>
-              <h3>Testing & Revisi</h3>
-              <p>Dicek di berbagai perangkat dan browser, lalu direvisi sesuai masukan Anda sampai benar-benar pas.</p>
+              <div className="log-hash">Tahap 04 • Uji Coba Kualitas</div>
+              <h3>Quality Assurance & Review Klien</h3>
+              <p>Dicek di berbagai perangkat dan browser, lalu disempurnakan sesuai masukan Anda sampai benar-benar pas.</p>
             </div>
             <div className="log-item">
-              <div className="log-hash">$ commit 0d8e17 — deploy</div>
-              <h3>Launch & Support</h3>
-              <p>Website naik ke domain Anda, plus pendampingan pasca-launch kalau ada yang perlu disesuaikan.</p>
+              <div className="log-hash">Tahap 05 • Go-Live & Garansi</div>
+              <h3>Peluncuran & Pendampingan</h3>
+              <p>Website naik ke domain resmi Anda, plus pendampingan pasca-launch agar langsung siap digunakan.</p>
             </div>
           </div>
         </div>
@@ -97,7 +97,7 @@ export default function Services() {
 
       <section>
         <div className="cta-band">
-          <div className="eyebrow" style={{ justifyContent: "center" }}>&lt;/&gt; SIAP MULAI?</div>
+          <div className="eyebrow" style={{ justifyContent: "center" }}>SIAP MEMULAI?</div>
           <h2>Ceritakan kebutuhan website Anda</h2>
           <p>Konsultasi awal gratis, tanpa komitmen. Kami balas lewat WhatsApp dalam hitungan menit.</p>
           <div className="hero-ctas">

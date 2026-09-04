@@ -26,7 +26,7 @@ export default function About() {
           <div className="trust-item"><div className="num">50+</div><div className="lbl">website sudah diluncurkan</div></div>
           <div className="trust-item"><div className="num">4.9/5</div><div className="lbl">rata-rata rating klien</div></div>
           <div className="trust-item"><div className="num">3–14</div><div className="lbl">hari waktu pengerjaan</div></div>
-          <div className="trust-item"><div className="num">100%</div><div className="lbl">source code milik Anda</div></div>
+          <div className="trust-item"><div className="num">100%</div><div className="lbl">hak milik penuh & aset digital</div></div>
         </div>
       </div>
 
@@ -37,11 +37,11 @@ export default function About() {
               <div className="eyebrow">CERITA KAMI</div>
               <h2>Dimulai dari satu masalah sederhana</h2>
               <p>Banyak bisnis kecil dan personal di Makassar butuh website, tapi sering terjebak antara harga mahal dari agensi besar atau hasil asal jadi dari freelancer lepas.</p>
-              <p>MyDEV dibangun untuk mengisi celah itu—tim yang cukup kecil untuk cepat dan personal, tapi cukup disiplin untuk menghasilkan kode dan desain yang rapi seperti dikerjakan tim besar.</p>
-              <p>Setiap proyek kami perlakukan seperti commit di git: jelas tujuannya, terdokumentasi prosesnya, dan bisa diaudit hasilnya.</p>
+              <p>MyDEV dibangun untuk mengisi celah itu—tim yang cukup lincah untuk bergerak cepat dan personal, namun berdedikasi menghasilkan standar desain dan sistem berkualitas tinggi.</p>
+              <p>Setiap proyek kami kelola secara profesional dan terukur: jelas tujuannya, transparan prosesnya, dan optimal performanya.</p>
             </div>
             <div className="story-visual">
-              <div className="log-hash">$ cat mission.md</div>
+              <div className="mission-badge">Misi Utama MyDEV</div>
               <p>&quot;Membantu bisnis dan personal di Indonesia punya website cepat, rapi, dan enak dilihat—tanpa proses yang membingungkan atau harga yang tidak masuk akal.&quot;</p>
             </div>
           </div>
@@ -78,13 +78,13 @@ export default function About() {
             </div>
             <div className="svc-card">
               <div className="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2" /><path d="M8 12h8M8 8h8M8 16h5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg></div>
-              <h3>Kode yang Bisa Diaudit</h3>
-              <p>Source code terstruktur dan didokumentasikan, jadi tidak terkunci pada satu developer saja.</p>
+              <h3>Standar Kualitas Tinggi</h3>
+              <p>Struktur website bersih dan terdokumentasi, sehingga mudah dikembangkan untuk jangka panjang.</p>
             </div>
             <div className="svc-card">
               <div className="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 9l-5 5 5 5M16 9l5 5-5 5M13 3L9 21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg></div>
               <h3>100% Milik Anda</h3>
-              <p>Domain, hosting, dan source code sepenuhnya milik klien—tidak ada penguncian vendor.</p>
+              <p>Domain, hosting, dan aset website sepenuhnya milik klien—bebas dari keterikatan sepihak.</p>
             </div>
           </div>
         </div>
@@ -93,29 +93,29 @@ export default function About() {
       <section className="process-alt">
         <div className="wrap">
           <div className="section-head">
-            <div className="eyebrow">// PERJALANAN KAMI</div>
+            <div className="eyebrow">PERJALANAN KAMI</div>
             <h2>Perkembangan MyDEV dari waktu ke waktu</h2>
           </div>
           <div className="log">
             <div className="log-item">
-              <div className="log-hash">$ commit 2023 — genesis</div>
+              <div className="log-hash">2023 • Awal Perjalanan</div>
               <h3>MyDEV Didirikan</h3>
-              <p>Berawal dari proyek freelance di Makassar, MyDEV resmi berdiri sebagai jasa pembuatan website.</p>
+              <p>Berawal dari proyek freelance di Makassar, MyDEV resmi berdiri sebagai penyedia solusi website terpercaya.</p>
             </div>
             <div className="log-item">
-              <div className="log-hash">$ commit 2024 — growth</div>
+              <div className="log-hash">2024 • Pertumbuhan Portofolio</div>
               <h3>50 Proyek Pertama</h3>
               <p>Melewati 50 website yang diluncurkan untuk klien di berbagai kota, dari company profile sampai toko online.</p>
             </div>
             <div className="log-item">
-              <div className="log-hash">$ commit 2025 — expansion</div>
+              <div className="log-hash">2025 • Jangkauan Nasional</div>
               <h3>Melayani Seluruh Indonesia</h3>
-              <p>Perluasan layanan secara remote, memungkinkan klien di luar Makassar bekerja sama tanpa hambatan jarak.</p>
+              <p>Perluasan layanan secara profesional, memungkinkan klien di luar Makassar bekerja sama tanpa hambatan jarak.</p>
             </div>
             <div className="log-item">
-              <div className="log-hash">$ commit 2026 — today</div>
+              <div className="log-hash">2026 • Solusi Terintegrasi</div>
               <h3>Terus Berkembang</h3>
-              <p>Kini fokus pada web app custom dan dukungan jangka panjang untuk klien yang terus bertumbuh.</p>
+              <p>Kini fokus pada web app custom dan dukungan berkelanjutan untuk membantu akselerasi bisnis mitra kami.</p>
             </div>
           </div>
         </div>
@@ -123,7 +123,7 @@ export default function About() {
 
       <section>
         <div className="cta-band">
-          <div className="eyebrow" style={{ justifyContent: "center" }}>&lt;/&gt; MARI BEKERJA SAMA</div>
+          <div className="eyebrow" style={{ justifyContent: "center" }}>MARI BEKERJA SAMA</div>
           <h2>Punya proyek website di kepala Anda?</h2>
           <p>Ceritakan kebutuhan Anda, kami bantu wujudkan dari perencanaan sampai launch.</p>
           <div className="hero-ctas">

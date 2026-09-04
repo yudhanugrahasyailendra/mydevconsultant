@@ -26,7 +26,7 @@ export default function Portofolio() {
           <div className="trust-item"><div className="num">50+</div><div className="lbl">website sudah diluncurkan</div></div>
           <div className="trust-item"><div className="num">4.9/5</div><div className="lbl">rata-rata rating klien</div></div>
           <div className="trust-item"><div className="num">3–14</div><div className="lbl">hari waktu pengerjaan</div></div>
-          <div className="trust-item"><div className="num">100%</div><div className="lbl">source code milik Anda</div></div>
+          <div className="trust-item"><div className="num">100%</div><div className="lbl">hak milik penuh & aset digital</div></div>
         </div>
       </div>
 

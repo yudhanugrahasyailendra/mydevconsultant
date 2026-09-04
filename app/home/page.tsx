@@ -1,4 +1,4 @@
-import HeroTerminal from "../components/HeroTerminal";
+import HeroShowcase from "../components/HeroShowcase";
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
@@ -13,35 +13,20 @@ export default function Home() {
       <section className="hero">
         <div className="wrap">
           <div>
-            <h1>Website yang dibangun<br />serapi <span className="accent">kodenya.</span></h1>
-            <p className="lead">MyDEV membantu bisnis dan personal di Makassar—dan seluruh Indonesia—punya website cepat, rapi, dan enak dilihat. Dari landing page sampai aplikasi web custom.</p>
+            <h1>Website Profesional & Modern<br />untuk <span className="accent">Pertumbuhan Bisnis.</span></h1>
+            <p className="lead">MyDEV membantu bisnis dan profesional di Makassar—serta seluruh Indonesia—memiliki website cepat, elegan, dan siap menghasilkan. Dari landing page konversi tinggi sampai aplikasi web custom.</p>
             <div className="hero-ctas">
               <Link href="/contact" className="btn btn-primary">Mulai Proyek Anda →</Link>
               <Link href="/portofolio" className="btn btn-ghost">Lihat Portofolio</Link>
             </div>
             <div className="hero-meta">
-              <span><i className="dot"></i> Respon &lt; 1 jam</span>
-              <span><i className="dot"></i> Basis Makassar, kerja seluruh Indonesia</span>
-              <span><i className="dot"></i> Revisi sampai puas</span>
+              <span><i className="dot"></i> Respon Cepat &lt; 1 Jam</span>
+              <span><i className="dot"></i> Basis Makassar, Layanan Seluruh Indonesia</span>
+              <span><i className="dot"></i> Garansi & Pendampingan Penuh</span>
             </div>
           </div>
           <div className="stage">
-            <div className="terminal">
-              <div className="term-bar">
-                <span className="term-dot"></span><span className="term-dot"></span><span className="term-dot"></span>
-                <span className="term-file">index.html — proyek-klien</span>
-              </div>
-              <HeroTerminal />
-            </div>
-            <div className="preview-card">
-              <div className="preview-top"><span></span><span></span><span></span></div>
-              <div className="preview-body">
-                <div className="bar w1"></div>
-                <div className="bar w2"></div>
-                <div className="bar w3"></div>
-                <div className="box"></div>
-              </div>
-            </div>
+            <HeroShowcase />
           </div>
         </div>
       </section>
@@ -62,7 +47,7 @@ export default function Home() {
           </div>
           <div className="trust-item">
             <div className="num"><Counter end={100} suffix="%" /></div>
-            <div className="lbl">source code milik Anda</div>
+            <div className="lbl">hak milik penuh & aset digital</div>
           </div>
         </div>
       </div>
@@ -70,9 +55,9 @@ export default function Home() {
       <section id="layanan">
         <div className="wrap">
           <div className="section-head">
-            <div className="eyebrow">LAYANAN</div>
+            <div className="eyebrow">LAYANAN KAMI</div>
             <h2>Satu tim, semua kebutuhan web Anda</h2>
-            <p>Mulai dari halaman promosi sederhana sampai sistem custom—dikerjakan langsung, tanpa lempar-lempar ke banyak vendor.</p>
+            <p>Mulai dari halaman promosi sederhana sampai sistem custom—dikerjakan langsung oleh tim kami, tanpa lempar-lempar ke banyak vendor.</p>
           </div>
           <div className="grid-3">
             <div className="svc-card">
@@ -112,50 +97,50 @@ export default function Home() {
       <section id="proses" className="process-alt">
         <div className="wrap">
           <div className="section-head text-center" style={{ textAlign: "center", maxWidth: "700px", margin: "0 auto" }}>
-            <div className="eyebrow" style={{ justifyContent: "center" }}>PROSES KERJA</div>
-            <h2>Lima commit sampai website Anda live</h2>
-            <p>Alur kerja yang terstruktur dan transparan untuk setiap proyek, sehingga Anda selalu tahu progressnya.</p>
+            <div className="eyebrow" style={{ justifyContent: "center" }}>ALUR KERJA KAMI</div>
+            <h2>5 Langkah Terstruktur Menuju Website Impian Anda</h2>
+            <p>Alur kerja profesional, terukur, dan transparan di setiap tahap—memastikan hasil sesuai ekspektasi Anda.</p>
           </div>
           <div className="commit-grid">
             <div className="commit-card">
               <div className="commit-header">
-                <span className="commit-hash">$ commit a1c9f2</span>
-                <span className="commit-tag">discovery</span>
+                <span className="commit-hash">Tahap 01</span>
+                <span className="commit-tag">Discovery</span>
               </div>
-              <h3>Diskusi & Riset</h3>
-              <p>Kami gali tujuan bisnis, target pengunjung, dan referensi yang Anda suka lewat chat atau call singkat.</p>
+              <h3>Konsultasi & Riset</h3>
+              <p>Kami mendalami tujuan bisnis, target pengunjung, dan referensi yang Anda sukai lewat diskusi terarah.</p>
             </div>
             <div className="commit-card">
               <div className="commit-header">
-                <span className="commit-hash">$ commit 7e40b1</span>
-                <span className="commit-tag">design</span>
+                <span className="commit-hash">Tahap 02</span>
+                <span className="commit-tag">UI/UX Design</span>
               </div>
               <h3>Wireframe & Desain</h3>
-              <p>Susunan halaman dan tampilan visual dibuat dulu, Anda review sebelum satu baris kode pun ditulis.</p>
+              <p>Susunan tata letak dan desain visual interaktif disiapkan untuk Anda review sebelum tahap produksi dimulai.</p>
             </div>
             <div className="commit-card">
               <div className="commit-header">
-                <span className="commit-hash">$ commit c33d08</span>
-                <span className="commit-tag">build</span>
+                <span className="commit-hash">Tahap 03</span>
+                <span className="commit-tag">Development</span>
               </div>
-              <h3>Development</h3>
-              <p>Desain yang disetujui kami ubah jadi website yang berfungsi—cepat, rapi, dan mobile-friendly.</p>
+              <h3>Pengerjaan & Integrasi</h3>
+              <p>Desain diwujudkan menjadi website utuh yang berkecepatan tinggi, aman, dan responsif di seluruh gadget.</p>
             </div>
             <div className="commit-card">
               <div className="commit-header">
-                <span className="commit-hash">$ commit f912aa</span>
-                <span className="commit-tag">qa</span>
+                <span className="commit-hash">Tahap 04</span>
+                <span className="commit-tag">Quality Check</span>
               </div>
-              <h3>Testing & Revisi</h3>
-              <p>Dicek di berbagai perangkat dan browser, lalu direvisi sesuai masukan Anda sampai benar-benar pas.</p>
+              <h3>Testing & Penyempurnaan</h3>
+              <p>Pengujian ketat lintas perangkat dan browser, disempurnakan sesuai masukan Anda hingga benar-benar puas.</p>
             </div>
             <div className="commit-card">
               <div className="commit-header">
-                <span className="commit-hash">$ commit 0d8e17</span>
-                <span className="commit-tag">deploy</span>
+                <span className="commit-hash">Tahap 05</span>
+                <span className="commit-tag">Go-Live</span>
               </div>
-              <h3>Launch & Support</h3>
-              <p>Website naik ke domain Anda, plus pendampingan pasca-launch kalau ada yang perlu disesuaikan.</p>
+              <h3>Peluncuran & Support</h3>
+              <p>Website resmi aktif di domain Anda, dilengkapi panduan pengelolaan serta pendampingan pasca-peluncuran.</p>
             </div>
           </div>
         </div>

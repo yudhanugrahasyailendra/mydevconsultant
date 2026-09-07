@@ -13,7 +13,7 @@ export default function Home() {
       <section className="hero">
         <div className="wrap">
           <div>
-            <h1>Website Profesional & Modern<br />untuk <span className="accent">Pertumbuhan Bisnis.</span></h1>
+            <h1>Website Profesional & Modern<br />untuk <span className="accent">Pertumbuhan Bisnis</span></h1>
             <p className="lead">MyDEV membantu bisnis dan profesional di Makassar—serta seluruh Indonesia—memiliki website cepat, elegan, dan siap menghasilkan. Dari landing page konversi tinggi sampai aplikasi web custom.</p>
             <div className="hero-ctas">
               <Link href="/contact" className="btn btn-primary">Mulai Proyek Anda →</Link>

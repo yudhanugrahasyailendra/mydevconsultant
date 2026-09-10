@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import ContactForm from "./contact-form/ContactForm";
 
 export const metadata: Metadata = {
   title: "Kontak | MyDEV - Building Your Future",
@@ -54,31 +55,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <form className="contact-form" action="mailto:mydev9883@gmail.com" method="post" encType="text/plain">
-              <div className="form-row">
-                <div className="form-group">
-                  <label htmlFor="name">Nama</label>
-                  <input id="name" name="name" type="text" placeholder="Nama lengkap Anda" required />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="whatsapp">No. WhatsApp</label>
-                  <input id="whatsapp" name="whatsapp" type="tel" placeholder="08xx-xxxx-xxxx" />
-                </div>
-              </div>
-              <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="nama@email.com" required />
-              </div>
-              <div className="form-group">
-                <label htmlFor="project">Jenis Proyek</label>
-                <input id="project" name="project" type="text" placeholder="Landing page, company profile, toko online, dll." />
-              </div>
-              <div className="form-group">
-                <label htmlFor="message">Pesan</label>
-                <textarea id="message" name="message" rows={5} placeholder="Ceritakan kebutuhan website Anda secara singkat..." required></textarea>
-              </div>
-              <button type="submit" className="btn btn-primary" style={{ justifyContent: "center" }}>Kirim Pesan →</button>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </section>

@@ -1,14 +1,19 @@
 import { createBrowserClient } from '@supabase/ssr'
-import { createClient } from '@supabase/supabase-js'
+import { createClient, type SupabaseClient } from '@supabase/supabase-js'
 
-// Client-side (menggunakan createBrowserClient agar cookie auth sinkron dengan middleware Next.js)
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || ''
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ''
+
+// Client-side: fallback ke dummy string saat inisialisasi modul jika env var belum terpasang di Vercel agar browser tidak crash
 export const supabaseClient = createBrowserClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+    supabaseUrl || 'https://placeholder.supabase.co',
+    supabaseAnonKey || 'placeholder'
 )
 
-// Server-side only (pakai service role, bypass RLS)
-export const supabaseAdmin = createClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.SUPABASE_SERVICE_ROLE_KEY!
-)
+// Server-side only (service role)
+// Hanya diinisialisasi di environment server dan jika SUPABASE_SERVICE_ROLE_KEY tersedia
+export const supabaseAdmin: SupabaseClient = (
+    typeof window === 'undefined' && process.env.SUPABASE_SERVICE_ROLE_KEY && supabaseUrl
+        ? createClient(supabaseUrl, process.env.SUPABASE_SERVICE_ROLE_KEY)
+        : null
+) as unknown as SupabaseClient

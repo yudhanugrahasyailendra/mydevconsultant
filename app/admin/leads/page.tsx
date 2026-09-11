@@ -2,6 +2,20 @@ import { supabaseAdmin } from '@/app/lib/supabase'
 import LogoutButton from '@/app/admin/components/logout-button'
 
 export default async function LeadsPage() {
+    if (!supabaseAdmin) {
+        return (
+            <div className="p-8">
+                <div className="flex items-center justify-between mb-6">
+                    <h1 className="text-2xl font-bold">Daftar Leads</h1>
+                    <LogoutButton />
+                </div>
+                <p className="text-red-500">
+                    Konfigurasi <code>SUPABASE_SERVICE_ROLE_KEY</code> belum tersedia di Vercel Environment Variables.
+                </p>
+            </div>
+        )
+    }
+
     const { data: leads, error } = await supabaseAdmin
         .from('leads')
         .select('*')

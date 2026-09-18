@@ -75,7 +75,7 @@ export default function Portofolio() {
             <div className="port-card">
               <div className="port-thumb" style={{ background: "linear-gradient(135deg,#F0B15F,#C8791E)" }}>
                 <div className="browser-dots"><span></span><span></span><span></span></div>
-                <Image src="/images/portofolio/ME Record Studio.png" alt="ME Record Studio" fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
+                <Image src="/images/portofolio/Me Record Studio.png" alt="ME Record Studio" fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
               </div>
               <div className="port-info">
                 <div className="tag">COMPANY PROFILE</div>

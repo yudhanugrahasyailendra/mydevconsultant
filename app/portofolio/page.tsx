@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -41,61 +42,56 @@ export default function Portofolio() {
             <div className="port-card">
               <div className="port-thumb" style={{ background: "linear-gradient(135deg,#5FC1F0,#1E7FB8)" }}>
                 <div className="browser-dots"><span></span><span></span><span></span></div>
+                <Image src="/images/portofolio/Center Coconut.jpg" alt="Center Coconut" fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
               </div>
               <div className="port-info">
                 <div className="tag">COMPANY PROFILE</div>
-                <h3>Kopi Anoa Roastery</h3>
-                <p>Profil bisnis kedai kopi lokal Makassar dengan katalog menu digital.</p>
+                <h3>Center Coconut</h3>
+                <p>Website company profile dan katalog produk untuk Center Coconut.</p>
               </div>
             </div>
             <div className="port-card">
               <div className="port-thumb" style={{ background: "linear-gradient(135deg,#0D1117,#3D444D)" }}>
                 <div className="browser-dots"><span></span><span></span><span></span></div>
+                <Image src="/images/portofolio/MAN Bindu.jpg" alt="MAN Bindu" fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
               </div>
               <div className="port-info">
-                <div className="tag">TOKO ONLINE</div>
-                <h3>Rumah Tenun Sengkang</h3>
-                <p>Toko online kain tenun dengan katalog produk dan checkout WhatsApp.</p>
+                <div className="tag">WEBSITE SEKOLAH</div>
+                <h3>MAN Bindu</h3>
+                <p>Website resmi instansi pendidikan MAN Bindu dengan sistem informasi sekolah.</p>
               </div>
             </div>
             <div className="port-card">
               <div className="port-thumb" style={{ background: "linear-gradient(135deg,#9ECE6A,#1E7FB8)" }}>
                 <div className="browser-dots"><span></span><span></span><span></span></div>
+                <Image src="/images/portofolio/SMPN 1 Tinggimoncong.jpg" alt="SMPN 1 Tinggimoncong" fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
               </div>
               <div className="port-info">
-                <div className="tag">WEB APP</div>
-                <h3>Dashboard Klinik Sehati</h3>
-                <p>Sistem booking dan rekam pasien untuk klinik keluarga.</p>
+                <div className="tag">WEBSITE SEKOLAH</div>
+                <h3>SMPN 1 Tinggimoncong</h3>
+                <p>Platform informasi dan portal sekolah untuk SMPN 1 Tinggimoncong.</p>
               </div>
             </div>
             <div className="port-card">
               <div className="port-thumb" style={{ background: "linear-gradient(135deg,#F0B15F,#C8791E)" }}>
                 <div className="browser-dots"><span></span><span></span><span></span></div>
+                <Image src="/images/portofolio/ME Record Studio.png" alt="ME Record Studio" fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
               </div>
               <div className="port-info">
-                <div className="tag">LANDING PAGE</div>
-                <h3>Warung Nusantara</h3>
-                <p>Landing page promosi untuk peluncuran menu baru restoran keluarga.</p>
+                <div className="tag">COMPANY PROFILE</div>
+                <h3>ME Record Studio</h3>
+                <p>Website resmi untuk ME Record Studio dengan katalog layanan dan portfolio musik.</p>
               </div>
             </div>
             <div className="port-card">
               <div className="port-thumb" style={{ background: "linear-gradient(135deg,#D18FE0,#7A3FA0)" }}>
                 <div className="browser-dots"><span></span><span></span><span></span></div>
+                <Image src="/images/portofolio/Wisata Malino.png" alt="Wisata Malino" fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
               </div>
               <div className="port-info">
-                <div className="tag">TOKO ONLINE</div>
-                <h3>Butik Zahra Hijab</h3>
-                <p>Toko online busana muslim dengan filter produk dan integrasi pembayaran.</p>
-              </div>
-            </div>
-            <div className="port-card">
-              <div className="port-thumb" style={{ background: "linear-gradient(135deg,#5FC1F0,#3D444D)" }}>
-                <div className="browser-dots"><span></span><span></span><span></span></div>
-              </div>
-              <div className="port-info">
-                <div className="tag">WEB APP</div>
-                <h3>EduTrack LMS</h3>
-                <p>Platform belajar daring untuk bimbingan belajar dengan pelacakan progres siswa.</p>
+                <div className="tag">PORTAL WISATA</div>
+                <h3>Wisata Malino</h3>
+                <p>Portal informasi pariwisata untuk destinasi Wisata Malino, lengkap dengan direktori tempat wisata.</p>
               </div>
             </div>
           </div>

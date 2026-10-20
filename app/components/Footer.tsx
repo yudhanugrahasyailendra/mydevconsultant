@@ -57,20 +57,15 @@ export default function Footer() {
               <h4>Perusahaan</h4>
               <Link href="/home">Beranda</Link>
               <Link href="/about">Tentang Kami</Link>
-              <Link href="/portofolio">Portofolio Klien</Link>
-            </div>
-            <div className="foot-menu-col">
-              <h4>Layanan Kami</h4>
-              <Link href="/services">Web Development</Link>
-              <Link href="/services">Mobile Apps</Link>
-              <Link href="/services">UI/UX Design</Link>
-              <Link href="/services">IT Consulting</Link>
+              <Link href="/services">Layanan</Link>
+              <Link href="/portofolio">Portofolio</Link>
+              <Link href="/contact">Kontak</Link>
             </div>
             <div className="foot-menu-col">
               <h4>Kontak</h4>
               <Link href="/contact">Hubungi Kami</Link>
               <a href="mailto:mydev9883@gmail.com">mydev9883@gmail.com</a>
-              <a href="#">WhatsApp Admin</a>
+              <a href="https://wa.me/6282281565563" target="_blank">WhatsApp Admin</a>
             </div>
           </div>
         </div>
@@ -80,8 +75,8 @@ export default function Footer() {
             © 2026 MyDEV. Building your future.
           </div>
           <div className="foot-legal">
-            <Link href="#">Syarat & Ketentuan</Link>
-            <Link href="#">Kebijakan Privasi</Link>
+            <Link href="/syarat-ketentuan">Syarat & Ketentuan</Link>
+            <Link href="/kebijakan-privasi">Kebijakan Privasi</Link>
           </div>
         </div>
       </div>
